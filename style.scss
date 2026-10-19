@@ -15,6 +15,31 @@ body, button {
 .header {
     height: 710px;
     background-color: #E1FF8F;
+    position: relative;
+    &__stars_right {
+        position: absolute;
+        right: 0px;
+    }
+    &__star1_right {
+        position: absolute;
+        right: 344px;
+        top: 568px;
+    }
+    &__star2_right {
+        position: absolute;
+        right: 455px;
+        top: 538px;
+    }
+    &__star1_left {
+        position: absolute;
+        left: 63px;
+        top: 94px;
+    }
+    &__star2_left {
+        position: absolute;
+        left: 156px;
+        top: 69px;
+    }
     &__title {
         padding-top: 196px;
         width: 769px;
