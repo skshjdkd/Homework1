@@ -21,22 +21,22 @@ body, button {
   position: absolute;
   right: 0px;
 }
-.header__star1_right {
+.header__star_right_big {
   position: absolute;
   right: 344px;
   top: 568px;
 }
-.header__star2_right {
+.header__star_right {
   position: absolute;
   right: 455px;
   top: 538px;
 }
-.header__star1_left {
+.header__star_left_big {
   position: absolute;
   left: 63px;
   top: 94px;
 }
-.header__star2_left {
+.header__star_left {
   position: absolute;
   left: 156px;
   top: 69px;
@@ -118,14 +118,14 @@ body, button {
   flex-wrap: wrap;
   gap: 32px;
 }
-.about__section {
+.about__section_one {
   height: 473px;
   width: 378px;
   border-radius: 30px;
   background-color: white;
   transition: 1.5s;
 }
-.about__section:hover {
+.about__section_one:hover {
   scale: 1.1;
 }
 .about__section_number {

@@ -20,22 +20,22 @@ body, button {
         position: absolute;
         right: 0px;
     }
-    &__star1_right {
+    &__star_right_big {
         position: absolute;
         right: 344px;
         top: 568px;
     }
-    &__star2_right {
+    &__star_right {
         position: absolute;
         right: 455px;
         top: 538px;
     }
-    &__star1_left {
+    &__star_left_big {
         position: absolute;
         left: 63px;
         top: 94px;
     }
-    &__star2_left {
+    &__star_left {
         position: absolute;
         left: 156px;
         top: 69px;
@@ -118,13 +118,15 @@ body, button {
         gap: 32px;  
     }
     &__section {
-        height: 473px;
-        width: 378px;
-        border-radius: 30px;
-        background-color: white;
-        transition: 1.5s;
-        &:hover {
+        &_one {
+            height: 473px;
+            width: 378px;
+            border-radius: 30px;
+            background-color: white;
+            transition: 1.5s;
+            &:hover {
             scale: 1.1;
+            }
         }
         &_number {
             width: 108px;
