@@ -18,6 +18,9 @@ body, button {
     position: relative;
     &__star {
         position: absolute;
+        &_phone {
+            display: none;
+        }
         &_group {
             right: 0px;
         }
@@ -82,6 +85,9 @@ body, button {
         color: white;
         margin-bottom: 156px;
     }
+    &__line {
+        display: none;
+    }
 }
 
 .about {
@@ -97,6 +103,11 @@ body, button {
         margin-bottom: 24px;
         color: white;
         padding-top: 94px;
+    }
+    &__heading {
+        &_phone {
+            display: none;
+        }
     }
     &__par {
         width: 788px;
@@ -163,4 +174,16 @@ body, button {
         margin-left: 32px;
         margin-top: 16px;
     }
+    &__descr {
+        display: none;
+    }
+    &__button {
+        display: none;
+    }
 }
+
+.footer {
+    display: none;
+}
+
+@import 'phonemod';

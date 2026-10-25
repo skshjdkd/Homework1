@@ -1,0 +1,190 @@
+@media (max-width: 1024px) {
+    .centre {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .header {
+        height: 700px;
+        &__star {
+            &_group {
+                display: none;
+            }
+            &_phone {
+                display: block;
+                right: 0px;
+                top: 0px;
+            }
+            &_left {
+                left: 92px;
+                top: 65px;
+                width: 21px;
+                &.header__star_big {
+                    left: 38px;
+                    top: 98px;
+                    width: 34px;
+                }
+            }
+            &_right {
+                right: 85px;
+                top: 559px;
+                width: 17px;
+                &.header__star_big {
+                    right: 33px;
+                    top: 582px;
+                    width: 38px;
+                }
+            }
+        }
+        &__title {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 0 auto;
+            padding-top: 147px;
+            padding-bottom: 24px;
+            font-size: 40px;
+            text-align: center;
+        }
+        &__par {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+        }
+        &__button {
+            display: block;
+            width: 285px;
+            height: 54px;
+            margin: 40px auto 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        &__line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 52px;
+            padding: 0 32px;
+            box-sizing: border-box;
+            background-color: #C9EB5C;
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #202027;
+        }
+    }
+
+    .about {
+        height: auto;
+        padding-bottom: 16px;
+        &__title {
+            padding-top: 56px;
+            margin-bottom: 48px;
+            font-size: 40px;
+        }
+        &__heading {
+            &_desktop {
+                display: none;
+            }
+            &_phone {
+                display: inline;
+            }
+        }
+        &__par {
+            display: none;
+        }
+        &__sections {
+            gap: 24px;
+        }
+        &__section {
+            &_one {
+                width: calc(50% - 12px);
+                height: auto;
+                padding-bottom: 32px;
+                &:hover {
+                    scale: 1;
+                }
+            }
+            &_big {
+                height: auto;
+            }
+            &_bottom {
+                margin-top: 0px;
+            }
+        }
+        &__img {
+            display: block;
+            width: 100%;
+            height: 285px;
+            object-fit: cover;
+        }
+        &__number {
+            display: none;
+        }
+        &__play {
+            margin: 32px 29px 0;
+            font-size: 32px;
+            line-height: 1.2;
+        }
+        &__descr {
+            display: block;
+            margin: 16px 29px 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #202027;
+        }
+        &__button {
+            display: block;
+            width: calc(100% - 58px);
+            height: 54px;
+            margin: 32px 29px 0;
+            border: none;
+            border-radius: 60px;
+            background-color: #202027;
+            font-weight: 600;
+            font-size: 16px;
+            color: white;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background-color: #C9EB5C;
+        &__text {
+            font-weight: 600;
+            font-size: 16px;
+            color: #202027;
+        }
+    }
+}
+@media (max-width: 475px) {
+    .centre {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        &__line {
+            padding: 0 20px;
+        }
+    }
+
+    .about {
+        &__section {
+            &_one {
+                width: 100%;
+            }
+        }
+    }
+}
