@@ -150,7 +150,8 @@ body, button {
     }
     &__section {
         &_one {
-            height: 473px;
+            z-index: 1;
+            height: 500px;
             width: 378px;
             border-radius: 30px;
             background-color: white;
@@ -160,10 +161,10 @@ body, button {
             }
         }
         &_big {
-            height: 512px;
+            height: 551px;
         }
         &_bottom {
-            margin-top: -39px;  
+            margin-top: -50px;  
         }
     }
     &__img {
@@ -208,6 +209,30 @@ body, button {
     background-color: #202027;
     height: 3500px;
     padding-top: 36px;
+    position: relative;
+    &__star {
+        position: absolute;
+        &_little {
+            &_top {
+                top: 93px;
+                right: 124px;
+            }
+            &_bottom {
+                right: 150px;
+                bottom: 45px;
+            }
+        }
+        &_big {
+            &_top {
+                top: 126px;
+                right: 45px;
+            }
+            &_bottom {
+                bottom: 65px;
+                right: 52px;
+            }
+        }
+    }
     &__title {
         font-weight: 700;
         font-style: Bold;
@@ -277,7 +302,7 @@ body, button {
     background-color: #C9EB5C;
     &__text {
         font-weight: 600;
-        font-size: 16px;
+        font-size: 24px;
         color: #202027;
     }
 }

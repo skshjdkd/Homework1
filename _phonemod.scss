@@ -169,6 +169,11 @@
     }
 }
 @media (max-width: 475px) {
+
+    .games {
+        display: none;
+    }
+
     .centre {
         padding-left: 16px;
         padding-right: 16px;
@@ -181,6 +186,9 @@
     }
 
     .about {
+        &__star {
+            display: none;
+        }
         &__section {
             &_one {
                 width: 100%;
