@@ -78,13 +78,17 @@ body, button {
   background-color: #202027;
   font-family: "Montserrat";
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 24px;
   line-height: 142%;
   letter-spacing: 0%;
   text-align: center;
   color: white;
   margin-bottom: 156px;
+  transition: 0.5s;
+}
+.header__button:hover {
+  background-color: #E1FF8F;
+  color: #202027;
 }
 .header__line {
   display: none;
@@ -93,6 +97,23 @@ body, button {
 .about {
   height: 1438px;
   background-color: #202027;
+  position: relative;
+}
+.about__star {
+  position: absolute;
+  z-index: 0;
+}
+.about__star_big {
+  top: 822px;
+  left: 40px;
+}
+.about__star_right {
+  top: 77px;
+  right: 0px;
+}
+.about__star_little {
+  top: 770px;
+  left: 25px;
 }
 .about__title {
   font-weight: 700;
@@ -163,7 +184,7 @@ body, button {
 .about__play {
   font-weight: 700;
   font-style: Bold;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1;
   letter-spacing: 0px;
   vertical-align: middle;
@@ -178,8 +199,82 @@ body, button {
   display: none;
 }
 
+.games {
+  background-color: #202027;
+  height: 3500px;
+  padding-top: 36px;
+}
+.games__title {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: white;
+  vertical-align: middle;
+  margin-bottom: 72px;
+}
+.games__game {
+  background-color: #FFFFFF;
+  width: 1200px;
+  height: 500px;
+  margin-bottom: 32px;
+  border-radius: 30px;
+  display: flex;
+}
+.games__game_description {
+  width: 600px;
+  padding: 48px;
+}
+.games__game_title {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: #202027;
+  margin-bottom: 24px;
+}
+.games__game_subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  margin-bottom: 36px;
+}
+.games__game_button {
+  background-color: #202027;
+  padding: 16px 28px 16px 28px;
+  border-radius: 60px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 142%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FFFFFF;
+  width: 247px;
+  height: 66px;
+  border-color: #202027;
+  transition: 0.5s;
+}
+.games__game_button:hover {
+  background-color: #FFFFFF;
+  color: #202027;
+}
+
 .footer {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: #C9EB5C;
+}
+.footer__text {
+  font-weight: 600;
+  font-size: 16px;
+  color: #202027;
 }
 
 @media (max-width: 1024px) {
