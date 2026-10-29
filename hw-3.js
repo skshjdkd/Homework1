@@ -33,3 +33,11 @@ while (n >= 50) {
 alert (num);
 
 // №6
+let firstFriday = Number(prompt('Какого числа была первая пятница в этом месяце?'));
+for ( i = 1; i < 6; i ++ ) {
+    console.log(`Сегодня пятница, ${firstFriday}-е число. Необходимо подготовить отчет`);
+    firstFriday += 7;
+    if ( firstFriday > 31 ) {
+        firstFriday -= 31;
+    }
+}
