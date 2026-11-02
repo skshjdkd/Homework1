@@ -35,28 +35,41 @@ function isCorrect(a,b) {
 }
 // #6
 function cube() {
-  const n = Number(prompt('Введите число:'));
+  const input = prompt('Введите число:');
 
-  if (input === null || input.trim() === '' || isNaN(n)) {
+  if (input === null || input.trim() === '' || isNaN(Number(input))) {
     return 'Переданный параметр не является числом';
   }
 
+  const n = Number(input);
+
   return `${n} в кубе равняется ${n ** 3}`;
 }
+
 // #7
-function cubeOf(value) {
-  const n = Number(value);
+const circle1 = {
+    radius: prompt('Введите радиус первого круга: '),
 
-  if (value === null || String(value).trim() === '' || isNaN(n)) {
-    return 'Переданный параметр не является числом';
-  }
+    getArea() {
+        return Math.PI * this.radius ** 2;
+    },
 
-  return `${n} в кубе равняется ${n ** 3}`;
-}
+    getPerimeter() {
+        return 2 * Math.PI * this.radius;
+    }
+};
 
-function cube() {
-  return cubeOf(prompt('Введите число:'));
-}
+const circle2 = {
+    radius: prompt('Введите радиус второго круга: '),
+
+    getArea() {
+        return Math.PI * this.radius ** 2;
+    },
+
+    getPerimeter() {
+        return 2 * Math.PI * this.radius;
+    }
+};
 
 // Проверка всех заданий
 console.log(minNumber(7,9));
@@ -67,7 +80,7 @@ correctAge(prompt("Сколько вам лет?"));
 isCorrect(3,4);
 isCorrect(3,'ds');
 console.log(cube());
-// Проверка для чисел от 0 до 10
-for (let i = 0; i <= 10; i++) {
-  console.log(cubeOf(i));
-}
+console.log("circle1 площадь:", circle1.getArea());
+console.log("circle1 периметр:", circle1.getPerimeter());
+console.log("circle2 площадь:", circle2.getArea());
+console.log("circle2 периметр:", circle2.getPerimeter());
