@@ -6,23 +6,30 @@ for ( let i = 0; i < arr.length; i++) {
 }
 
 // #2
-console.log(arr.indexOf(4));
+let index = -1;
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 4) {
+        index = i;
+        break;
+    }
+}
+console.log(index);
 
 // #3
 console.log(arr.join(' '));
 
 // #4
 const arr1 = [];
-const arr2 = [];
 
-for (i=0; i<3; i++) {
-    for (i=0; i<3; i++) {
-        arr1.push(1);
+for (let i = 0; i < 3; i++) {
+    const arr2 = [];
+    for (let j = 0; j < 3; j++) {
+        arr2.push(1);
     }
-    arr2.push(arr1);
+    arr1.push(arr2);
 }
 
-console.log(arr2);
+console.log(arr1);
 
 // #5 
 const arr3 =[1,1,1];
