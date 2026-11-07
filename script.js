@@ -57,3 +57,66 @@ function searchNumber() {
 
     alert(`Поздравляю! Вы угадали число! Это было ${number}`);
 }
+
+function easyMath() {
+    alert('Сейчас будет выведено пару кратких примеров, проверим Ваши знания!'); 
+
+    let number1 = Math.floor((Math.random()*100)+1);
+    let number2 = Math.floor((Math.random()*100)+1);
+
+    let answer = Number(prompt(`${number1} + ${number2} = ...`));
+
+    if (answer == (number1 + number2)) {
+        alert ('Все верно, идем дальше');
+    } else {
+        alert ('Неверно');
+    }
+
+    while ((number1 < number2)) {
+        number1 = Math.floor((Math.random()*100)+1);
+        number2 = Math.floor((Math.random()*100)+1);
+    }
+
+    answer = Number(prompt(`${number1} - ${number2} = ...`));
+
+    if (answer == (number1 - number2)) {
+        alert ('Все верно, идем дальше');
+    } else {
+        alert ('Неверно');
+    }
+
+    number1 = Math.floor((Math.random()*10)+1);
+    number2 = Math.floor((Math.random()*10)+1);
+
+    answer = Number(prompt(`${number1} * ${number2} = ...`));
+
+    if (answer == (number1 * number2)) {
+        alert ('Все верно, идем дальше');
+    } else {
+        alert ('Неверно');
+    }
+
+    while ((number1 < number2) || (number1 % number2 != 0)) {
+        number1 = Math.floor((Math.random()*100)+1);
+        number2 = Math.floor((Math.random()*100)+1);
+    }
+
+    answer = Number(prompt(`${number1} / ${number2} = ...`));
+
+    if (answer == (number1 / number2)) {
+        alert ('Все верно, идем дальше');
+    } else {
+        alert ('Неверно');
+    }
+}
+
+function reversedText() {
+    let textUser = prompt('Введите текст, который хотите перевернуть:');
+    let reversedTextUser = '';
+
+    for (let i = 0; i < textUser.length; i++) {
+        reversedTextUser = textUser[i] + reversedTextUser;
+    }
+
+    alert(`Ваш перевернутый текст: ${reversedTextUser}`);
+}
