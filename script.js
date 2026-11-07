@@ -37,3 +37,23 @@ function startQuiz() {
 
     alert(`Игра окончена!\nПравильных ответов: ${score} из ${quiz.length}`);
 }
+
+function searchNumber() {
+    const number = Math.floor(Math.random() * 100) + 1;
+
+    const message =
+        `Приветствуем Вас на игре "Угадай число от 1 до 100"!\n` +
+        `Число уже было загадано. Введите Ваше число:`;
+
+    let numberUser = Number(prompt(message));
+
+    while (numberUser !== number) {
+        if (numberUser < number) {
+            numberUser = Number(prompt('Ваше число меньше загаданного. Введите новое число:'));
+        } else {
+            numberUser = Number(prompt('Ваше число больше загаданного. Введите новое число:'));
+        }
+    }
+
+    alert(`Поздравляю! Вы угадали число! Это было ${number}`);
+}
