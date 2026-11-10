@@ -1,0 +1,310 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.centre {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+body, button {
+    font-family: 'Montserrat';
+}
+
+.header {
+    height: 710px;
+    background-color: #E1FF8F;
+    position: relative;
+    &__star {
+        position: absolute;
+        &_phone {
+            display: none;
+        }
+        &_group {
+            right: 0px;
+        }
+        &_right {
+            right: 455px;
+            top: 538px;
+            &.header__star_big {
+                right: 344px;
+                top: 568px;
+            }
+        }
+        &_left {
+            left: 156px;
+            top: 69px;
+            &.header__star_big {
+                left: 63px;
+                top: 94px;
+            }
+        }
+    }
+    &__title {
+        padding-top: 196px;
+        width: 769px;
+        height: 156px;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 64px;
+        line-height: 1.2;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        padding-bottom: 24px;
+    }
+    &__par {
+        width: 720px;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+    }
+    &__button {
+        border: 1px solid #202027;
+        width: 247px;
+        height: 66px;
+        border-width: 1px;
+        padding-top: 16px;
+        padding-right: 28px;
+        padding-bottom: 16px;
+        padding-left: 28px;
+        opacity: 1;
+        border-radius: 60px;
+        margin-top: 48px;
+        background-color: #202027;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        
+        font-size: 24px;
+        line-height: 142%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: white;
+        margin-bottom: 156px;
+        transition: 0.5s;
+    }
+    &__button:hover {
+        background-color: #E1FF8F;
+        color: #202027;
+    }
+    &__line {
+        display: none;
+    }
+}
+
+.about {
+    height: 1438px;
+    background-color: #202027;
+    position: relative;
+    &__star {
+        position: absolute;
+        z-index: 0;
+        &_big {
+            top: 822px;
+            left: 40px;
+        }
+        &_right {
+            top: 77px;
+            right: 0px;
+        }
+        &_little {
+            top: 770px;
+            left: 25px;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 64px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        margin-bottom: 24px;
+        color: white;
+        padding-top: 94px;
+    }
+    &__heading {
+        &_phone {
+            display: none;
+        }
+    }
+    &__par {
+        width: 788px;
+        font-family: Montserrat;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        color: white;
+        padding-bottom: 76px;
+    }
+    &__sections {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    &__section {
+        &_one {
+            z-index: 1;
+            height: 500px;
+            width: 378px;
+            border-radius: 30px;
+            background-color: white;
+            transition: 1.5s;
+            &:hover {
+                scale: 1.1;
+            }
+        }
+        &_big {
+            height: 551px;
+        }
+        &_bottom {
+            margin-top: -50px;  
+        }
+    }
+    &__img {
+        border-radius: 30px;
+    }
+    &__number {
+        width: 108px;
+        height: 28px;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        line-height: 1;
+        letter-spacing: 0px;
+        vertical-align: bottom;
+        background-color: #F7F7F7;
+        border-radius: 20px;
+        text-align: center;
+        padding-top: 8px;
+        margin-left: 32px;
+        margin-top: 32px;
+    }
+    &__play {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 30px;
+        line-height: 1;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        color: #202027;
+        margin-left: 32px;
+        margin-top: 16px;
+    }
+    &__descr {
+        display: none;
+    }
+    &__button {
+        display: none;
+    }
+}
+
+.games {
+    background-color: #202027;
+    height: 3500px;
+    padding-top: 36px;
+    position: relative;
+    &__star {
+        position: absolute;
+        &_little {
+            &_top {
+                top: 93px;
+                right: 124px;
+            }
+            &_bottom {
+                right: 150px;
+                bottom: 45px;
+            }
+        }
+        &_big {
+            &_top {
+                top: 126px;
+                right: 45px;
+            }
+            &_bottom {
+                bottom: 65px;
+                right: 52px;
+            }
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 64px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        color: white;
+        vertical-align: middle;
+        margin-bottom: 72px;
+    }
+    &__game {
+        background-color: #FFFFFF;
+        width: 1200px;
+        height: 500px;
+        margin-bottom: 32px;
+        border-radius: 30px;
+        display: flex;
+        &_description {
+            width: 600px;
+            padding: 48px;
+        }
+        &_title {
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 48px;
+            line-height: 100%;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            color: #202027;
+            margin-bottom: 24px;
+        }
+        &_subtitle {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0px;
+            vertical-align: middle;
+            margin-bottom: 36px;
+        }
+        &_button {
+            background-color: #202027;
+            padding: 16px 28px 16px 28px;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 142%;
+            letter-spacing: 0%;
+            text-align: center;
+            color: #FFFFFF;
+            width: 247px;
+            height: 66px;
+            border-color: #202027;
+            transition: 0.5s;
+        }
+        &_button:hover {
+            background-color: #FFFFFF;
+            color: #202027;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #C9EB5C;
+    &__text {
+        font-weight: 600;
+        font-size: 24px;
+        color: #202027;
+    }
+}
+
+@import 'phonemod';
