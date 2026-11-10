@@ -120,3 +120,28 @@ function reversedText() {
 
     alert(`Ваш перевернутый текст: ${reversedTextUser}`);
 }
+
+function rockPaperScissors() {
+    const variants = ['камень', 'ножницы', 'бумага'];
+
+    const answerOfBot = variants[Math.floor(Math.random() * 3)];
+
+    let answerOfUser = prompt('Давай сыграем в камень-ножницы-бумага!\nЧто выберешь?');
+    answerOfUser = answerOfUser.trim().toLowerCase();
+
+    let result;
+
+    if (answerOfUser === answerOfBot) {
+        result = 'Ничья!';
+    } else if (
+        (answerOfUser === 'камень' && answerOfBot === 'ножницы') ||
+        (answerOfUser === 'ножницы' && answerOfBot === 'бумага') ||
+        (answerOfUser === 'бумага' && answerOfBot === 'камень')
+    ) {
+        result = 'Ты победил!';
+    } else {
+        result = 'Ты проиграл!';
+    }
+
+    alert(`Ты выбрал: ${answerOfUser}\nКомпьютер выбрал: ${answerOfBot}\n\n${result}`);
+}
