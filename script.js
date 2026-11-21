@@ -145,3 +145,9 @@ function rockPaperScissors() {
 
     alert(`Ты выбрал: ${answerOfUser}\nКомпьютер выбрал: ${answerOfBot}\n\n${result}`);
 }
+
+function randomColors() {
+    alert('Нажми "Ок" и фон страницы поменяется на другой цвет');
+
+    
+}
