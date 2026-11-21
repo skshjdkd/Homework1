@@ -146,8 +146,16 @@ function rockPaperScissors() {
     alert(`Ты выбрал: ${answerOfUser}\nКомпьютер выбрал: ${answerOfBot}\n\n${result}`);
 }
 
-function randomColors() {
-    alert('Нажми "Ок" и фон страницы поменяется на другой цвет');
+function getRandomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
 
-    
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
+function randomColors() {
+    const BgcHeader = document.querySelector('.games__game_change');
+
+    BgcHeader.style.backgroundColor = getRandomColor();
 }
