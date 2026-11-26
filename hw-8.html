@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+    <button class="btn">Скрыть</button>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eaque, doloremque fugit aut vitae at quibusdam. Nesciunt dolore officia fugiat.</p>
+    <h2 class="h1_2">Lorem ipsum dolor sit.</h2>
+
+    <button class="btn-4">Задание 4: изменить текст</button>
+    <button class="btn-5">Задание 5: новый текст</button>
+    <button class="btn-6">Добавить элемент</button>
+    <button class="btn-7">Удалить элемент</button>
+
+    <p class="description">Описание 1</p>
+    <p class="text">Обычный абзац (без класса description)</p>
+    <p class="description">Описание 2</p>
+    <p class="note">Заметка (без класса description)</p>
+    <p class="description">Описание 3</p>
+
+    <script>
+        const elH1 = document.querySelector('h1');
+        const elBtn = document.querySelector('button');
+        const elP = document.querySelector('p');
+        const elH2 = document.querySelector('h2');
+        const elBtn4 = document.querySelector('.btn-4');
+        const elBtn5 = document.querySelector('.btn-5');
+        const elBtn6 = document.querySelector('.btn-6');
+        const elBtn7 = document.querySelector('.btn-7');
+
+        elBtn.addEventListener('click', function() {
+            elH1.classList.toggle('hidden');
+            elP.style.color = 'red';
+            elH2.textContent = 'Привет, мир!';
+        }); 
+
+        elBtn4.addEventListener('click', function () {
+            const elDescriptions = document.querySelectorAll('.description');
+
+            elDescriptions.forEach(function (el) {
+                el.textContent = 'Измененный текст';
+            });
+        });
+
+        elBtn5.addEventListener('click', function () {
+            const elDescriptions = document.querySelectorAll('p.description');
+
+            elDescriptions.forEach(function (el) {
+                el.textContent = 'Новый текст';
+            });
+        });
+
+        elBtn6.addEventListener('click', function () {
+            const elNewP = document.createElement('p');
+            elNewP.textContent = 'Новый абзац';
+            document.body.appendChild(elNewP);
+        });
+
+        elBtn7.addEventListener('click', function () {
+            const elFirstDescription = document.querySelector('p.description');
+
+            if (elFirstDescription) {
+                elFirstDescription.remove();
+            }
+        });
+    </script>
+</body>
+</html>
